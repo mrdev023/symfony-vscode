@@ -296,13 +296,13 @@
     },
     "devDependencies": {
         "@types/mocha": "^2.2.42",
-        "@types/node": "^7.0.43",
+        "@types/node": "^7.10.9",
         "typescript": "^2.6.1",
-        "vscode": "^1.1.6"
+        "vscode": "^1.1.36"
     },
     "dependencies": {
-        "graceful-fs": "^4.1.15",
-        "strip-json-comments": "^2.0.1",
-        "php-parser": "^3.0.0-prerelease.7"
+        "graceful-fs": "^4.2.3",
+        "php-parser": "3.0.0-prerelease.7",
+        "strip-json-comments": "^2.0.1"
     }
 }
