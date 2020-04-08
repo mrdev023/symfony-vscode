@@ -17,7 +17,7 @@ export class ComposerJSON {
                         let composerObj = JSON.parse(stripJsonComments(fs.readFileSync(uri.fsPath).toString()))
                         if(composerObj.require !== undefined) {
                             Object.keys(composerObj.require).forEach(key => {
-                                if(key === "symfony/symfony" || key == "symfony/framework-bundle") {
+                                if(key === "symfony/symfony" || key == "symfony/framework-bundle"  || key == "symfony/serializer") {
                                     resolve({
                                         symfonyVersion: parseInt(composerObj.require[key].match(/\d/)),
                                         uri: uri
